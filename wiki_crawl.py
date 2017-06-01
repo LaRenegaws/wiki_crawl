@@ -161,6 +161,7 @@ def initialize_crawl(input):
   else:
     raise ValueError("Invalid user input")
 
+
 """
 TinyDB initialization and update function
 """
@@ -171,6 +172,7 @@ def initialize_db():
     wiki_db.insert({'result': 'success', 'count': 0})
     wiki_db.insert({'result': 'failure', 'count': 0})
     wiki_db.insert({'result': 'conversion_rate', 'count': 0})
+
 
 def update_wiki_db(result):
   """
